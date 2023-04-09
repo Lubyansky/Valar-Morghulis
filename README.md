@@ -2,8 +2,7 @@
  
 <h1 align="center">Приложение на основе REST</h1>
 
-
-<h2>Цель<h2/>
+<h2>Цель:<h2/>
 
 <p>Вам необходимо разработать REST API и клиента для текстовой Online-RPG «Valar Morghulis» («VM») по мотивам «Игры Престолов».</p>
 
@@ -21,7 +20,7 @@
 <h4>ItemType - виды предметов в игре:</h4>
 <ul>
 <li>id - уникальный идентификатор ItemType (INT);</li>
-<li>name - название ItemType (меч, шлем ...);</li>
+<li>name - название ItemType (меч, шлем ...).</li>
 </ul>
 <h4>Item - отдельные предметы в игре, принадлежащие игрокам:</h4>
 <ul>
@@ -31,9 +30,9 @@
 </ul>
 <h4>Location – локация в игре:</h4>
 <ul>
-<li>locationId – краткое название-идентификатор локации (не более 10 символов)</li>
-<li>description – текст с описанием локации</li>
-<li>locationType – тип локации (Forest, Desert, Dungeon, River, Ocean)</li>
+<li>locationId – краткое название-идентификатор локации (не более 10 символов);</li>
+<li>description – текст с описанием локации;</li>
+<li>locationType – тип локации (Forest, Desert, Dungeon, River, Ocean).</li>
 </ul>
 <h4>Messages – сообщения между игроками:</h4>
 <ul>
