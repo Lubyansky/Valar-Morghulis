@@ -1,0 +1,51 @@
+INSERT INTO public."locations" (id, name, description, type, "createdAt", "updatedAt") values(default, 'Steppe Forest', 'Backwoods forest and grove, absolutely absorbing the surrounding desert. Tree branches block the road, and the shadow only emphasizes the mood of foggy forest mysteries.', 'Forest', clock_timestamp(), clock_timestamp());
+INSERT INTO public."locations" (id, name, description, type, "createdAt", "updatedAt") values(default, 'Desert of Dragons', 'Wide and desolate area. These lands were buried by dragons in their flames, and their presence is still felt in the still sand and inverted rocks.', 'Desert', clock_timestamp(), clock_timestamp());
+INSERT INTO public."locations" (id, name, description, type, "createdAt", "updatedAt") values(default, 'Depths of the Dungeon', 'One of the most dangerous places where the heroes of Ristaria will seek adventure. This is a gloomy dungeon that is buried deep under the mountains. Ancient fears and hidden threats live in it.', 'Dungeon', clock_timestamp(), clock_timestamp());
+INSERT INTO public."locations" (id, name, description, type, "createdAt", "updatedAt") values(default, 'Blood River Delta', 'The width of the river is so wide that sometimes you look at it and feel as if infinity is watching you. The rushing waters change into streams of different colors as they go downstream.', 'River', clock_timestamp(), clock_timestamp());
+INSERT INTO public."locations" (id, name, description, type, "createdAt", "updatedAt") values(default, 'Abyss of the Ocean', 'A wide expanse of silence where the ocean holds secrets floating on the heavenly face of the water.', 'Ocean', clock_timestamp(), clock_timestamp());
+
+INSERT INTO public."itemTypes" (id, name, "createdAt", "updatedAt") values(default, 'Bow', clock_timestamp(), clock_timestamp());
+INSERT INTO public."itemTypes" (id, name, "createdAt", "updatedAt") values(default, 'Crossbow', clock_timestamp(), clock_timestamp());
+INSERT INTO public."itemTypes" (id, name, "createdAt", "updatedAt") values(default, 'Arrow', clock_timestamp(), clock_timestamp());
+INSERT INTO public."itemTypes" (id, name, "createdAt", "updatedAt") values(default, 'Shield', clock_timestamp(), clock_timestamp());
+INSERT INTO public."itemTypes" (id, name, "createdAt", "updatedAt") values(default, 'Sword', clock_timestamp(), clock_timestamp());
+INSERT INTO public."itemTypes" (id, name, "createdAt", "updatedAt") values(default, 'Bastard Sword', clock_timestamp(), clock_timestamp());
+INSERT INTO public."itemTypes" (id, name, "createdAt", "updatedAt") values(default, 'Spear', clock_timestamp(), clock_timestamp());
+
+INSERT INTO public."users" (id, password, email, role, "createdAt", "updatedAt") values(default, '$2b$07$F81cQChcf.PFEIMvGz1OH.mcz0SxmSWkfsKN5Q6e5Z9.oyeoNv9WG', 'TestUser1@mail.com', default, clock_timestamp(), clock_timestamp());
+INSERT INTO public."users" (id, password, email, role, "createdAt", "updatedAt") values(default, '$2b$07$hmevS.mlKm9XvY5xhfsSkOIcFXVfS0gv48274/iJjFDavJlE4eRVO', 'TestUser2@mail.com', default, clock_timestamp(), clock_timestamp());
+INSERT INTO public."users" (id, password, email, role, "createdAt", "updatedAt") values(default, '$2b$07$gEe.IjyIisDBVz3Z454o5uGylDPvk.D9EVSL17Ii1x4tAZstcNfRW', 'TestUser3@mail.com', default, clock_timestamp(), clock_timestamp());
+INSERT INTO public."users" (id, password, email, role, "createdAt", "updatedAt") values(default, '$2b$07$TfT./6FqkXpGDyaX3U9L1eh//oD31PMtkIl.sFk3fKmKystPAe2qu', 'TestUser4@mail.com', default, clock_timestamp(), clock_timestamp());
+
+INSERT INTO public."personages" (id, name, "personageClass", level, position, user_id, "createdAt", "updatedAt") values(default, 'PersonageA', 'Knight', default, default, 1, clock_timestamp(), clock_timestamp());
+INSERT INTO public."personages" (id, name, "personageClass", level, position, user_id, "createdAt", "updatedAt") values(default, 'PersonageB', 'Wizard', default, default, 2, clock_timestamp(), clock_timestamp());
+INSERT INTO public."personages" (id, name, "personageClass", level, position, user_id, "createdAt", "updatedAt") values(default, 'PersonageC', 'Thief', default, default, 3, clock_timestamp(), clock_timestamp());
+INSERT INTO public."personages" (id, name, "personageClass", level, position, user_id, "createdAt", "updatedAt") values(default, 'PersonageD', 'Paladin', default, default, 4, clock_timestamp(), clock_timestamp());
+
+INSERT INTO public."items" (id, item_type, quality, owner, "createdAt", "updatedAt") values(default, '1', '50', 1, clock_timestamp(), clock_timestamp());
+INSERT INTO public."items" (id, item_type, quality, owner, "createdAt", "updatedAt") values(default, '2', default, 1, clock_timestamp(), clock_timestamp());
+INSERT INTO public."items" (id, item_type, quality, owner, "createdAt", "updatedAt") values(default, '1', '100', 2, clock_timestamp(), clock_timestamp());
+INSERT INTO public."items" (id, item_type, quality, owner, "createdAt", "updatedAt") values(default, '2', '99', 2, clock_timestamp(), clock_timestamp());
+INSERT INTO public."items" (id, item_type, quality, owner, "createdAt", "updatedAt") values(default, '1', '58', 3, clock_timestamp(), clock_timestamp());
+INSERT INTO public."items" (id, item_type, quality, owner, "createdAt", "updatedAt") values(default, '2', '75', 3, clock_timestamp(), clock_timestamp());
+INSERT INTO public."items" (id, item_type, quality, owner, "createdAt", "updatedAt") values(default, '2', '100', 4, clock_timestamp(), clock_timestamp());
+INSERT INTO public."items" (id, item_type, quality, owner, "createdAt", "updatedAt") values(default, '3', '75', 4, clock_timestamp(), clock_timestamp());
+INSERT INTO public."items" (id, item_type, quality, owner, "createdAt", "updatedAt") values(default, '6', '95', 3, clock_timestamp(), clock_timestamp());
+INSERT INTO public."items" (id, item_type, quality, owner, "createdAt", "updatedAt") values(default, '5', '85', 2, clock_timestamp(), clock_timestamp());
+
+INSERT INTO public."messages" (id, sender_id, recipient_id, text, "createdAt", "updatedAt") values(default, 1, 2, 'text', clock_timestamp(), clock_timestamp());
+INSERT INTO public."messages" (id, sender_id, recipient_id, text, "createdAt", "updatedAt") values(default, 2, 3, 'text1', clock_timestamp(), clock_timestamp());
+INSERT INTO public."messages" (id, sender_id, recipient_id, text, "createdAt", "updatedAt") values(default, 3, 2, 'text2', clock_timestamp(), clock_timestamp());
+INSERT INTO public."messages" (id, sender_id, recipient_id, text, "createdAt", "updatedAt") values(default, 4, 1, 'text3', clock_timestamp(), clock_timestamp());
+INSERT INTO public."messages" (id, sender_id, recipient_id, text, "createdAt", "updatedAt") values(default, 1, 4, 'text4', clock_timestamp(), clock_timestamp());
+INSERT INTO public."messages" (id, sender_id, recipient_id, text, "createdAt", "updatedAt") values(default, 4, 3, 'text5', clock_timestamp(), clock_timestamp());
+INSERT INTO public."messages" (id, sender_id, recipient_id, text, "createdAt", "updatedAt") values(default, 4, 2, 'text6', clock_timestamp(), clock_timestamp());
+INSERT INTO public."messages" (id, sender_id, recipient_id, text, "createdAt", "updatedAt") values(default, 2, 1, 'text7', clock_timestamp(), clock_timestamp());
+INSERT INTO public."messages" (id, sender_id, recipient_id, text, "createdAt", "updatedAt") values(default, 1, 2, 'text8', clock_timestamp(), clock_timestamp());
+INSERT INTO public."messages" (id, sender_id, recipient_id, text, "createdAt", "updatedAt") values(default, 2, 3, 'text9', clock_timestamp(), clock_timestamp());
+INSERT INTO public."messages" (id, sender_id, recipient_id, text, "createdAt", "updatedAt") values(default, 2, 4, 'text10', clock_timestamp(), clock_timestamp());
+INSERT INTO public."messages" (id, sender_id, recipient_id, text, "createdAt", "updatedAt") values(default, 1, 2, 'text11', clock_timestamp(), clock_timestamp());
+INSERT INTO public."messages" (id, sender_id, recipient_id, text, "createdAt", "updatedAt") values(default, 1, 3, 'text12', clock_timestamp(), clock_timestamp());
+INSERT INTO public."messages" (id, sender_id, recipient_id, text, "createdAt", "updatedAt") values(default, 4, 2, 'text13', clock_timestamp(), clock_timestamp());
+
+
